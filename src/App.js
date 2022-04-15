@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Code from './component/Code'
+import Question from './component/Question.js'
+// const container = styled.div``
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='app_heading'>Online IDE</div>
+      <div className='app_body'>
+        <Question />
+        <Code />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

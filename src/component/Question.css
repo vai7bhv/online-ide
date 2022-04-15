@@ -1,0 +1,31 @@
+.question {
+  display: flex;
+  flex: 0.35;
+  flex-direction: column;
+  margin-right: 10px;
+  border-right: 5px solid gray;
+  /* margin-top: 4px; */
+  margin-left: 20px;
+}
+
+.que_title {
+  border-bottom: 3px solid gray;
+  margin-right: 5px;
+}
+.que_example > p {
+  margin: 5px;
+}
+.que_example > h3 {
+  margin: 0;
+}
+.que_des {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 750px) {
+  .question {
+    border-right: none;
+    width: 95%;
+    margin: 10px;
+  }
+}
